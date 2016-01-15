@@ -1,0 +1,3253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Body>
+		<ns0:getContractsResponse
+			xmlns:ns0="http://www.swisscom.ch/eai/es/account/customer">
+			<ns1:trackingInformation
+				xmlns:ns1="http://www.swisscom.ch/ns/EAI/common/service/v1-0">
+				<ns1:eventGlobalID>UUID</ns1:eventGlobalID>
+				<ns1:eventLocalID>AC-Web</ns1:eventLocalID>
+				<ns1:applicationID>AC</ns1:applicationID>
+				<ns1:dataApplicationID>EAI</ns1:dataApplicationID>
+				<ns1:originEventLocalID>AC-Web</ns1:originEventLocalID>
+				<ns1:originApplicationID>AC</ns1:originApplicationID>
+				<ns1:sourceTimestamp>2014-07-02T11:09:45.856+02:00
+				</ns1:sourceTimestamp>
+			</ns1:trackingInformation>
+			<ns0:lastPage>true</ns0:lastPage>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber />
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969</ns2:primaryKey>
+					</ns1:keys>
+					<ns2:attributeList
+						xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+						<ns2:attribute>
+							<ns2:name>0900x / 0901x</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>0906x</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>Block Roaminfo SMS</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>Connect 1811</ns2:name>
+							<ns2:value>Y</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>InternationalRestr.</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>RoamingRestr</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>SOCLR</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+						<ns2:attribute>
+							<ns2:name>callsAnonymFlag</ns2:name>
+							<ns2:value>N</ns2:value>
+						</ns2:attribute>
+					</ns2:attributeList>
+				</ns1:subscription>
+				<ns0:configurationType />
+				<ns0:subType />
+				<ns0:product>
+					<ns0:name>NATEL RES L</ns0:name>
+					<ns0:category>Subscription</ns0:category>
+					<ns0:externalReference>BSC:SUB:559</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>NATEL® infinity L</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>NATEL® infinity L</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>NATEL® infinity L</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>NATEL® infinity L</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>+41 795511679</ns0:subscriberNumber>
+				<ns0:referenceNumber2>BSC:BAC:9874523</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>BSC:BAC:9874523</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2011-08-08T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId />
+				<ns0:listPrice>129.0</ns0:listPrice>
+				<ns0:specialPrice>129.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>0900x / 0901x</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>0906x</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>Block Roaminfo SMS</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>Connect 1811</ns1:name>
+						<ns1:value>Y</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>InternationalRestr.</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>RoamingRestr</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>SOCLR</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>callsAnonymFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>NATEL® infinity L</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>NATEL® infinity L</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>NATEL® infinity L</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>NATEL® infinity L</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>NATEL® infinity L</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ServiceGroup</ns1:name>
+						<ns1:value>DATA</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:contractEndDate>2013-08-07</ns0:contractEndDate>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>1.18146298</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-4E0Z7ZV</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Roaming charge by zone</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Tarif d'itinérance selon la zone</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Roaming charge by zone</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Tariffa roaming per zona</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Roamingtarif nach Zone</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Roaming by Zone</ns0:name>
+						<ns0:category>Option Offer</ns0:category>
+						<ns0:externalReference>BSC:SEP:81/83</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Tarif d'itinérance selon la zone</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Roaming charge by zone</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Tariffa roaming per zona</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Roamingtarif nach Zone</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-17T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-4RWTN5D</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>SIM Card Status</ns2:name>
+								<ns2:value>Active</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>SIM Card</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Carte SIM</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>SIM Card</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Carta SIM</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>SIM Karte</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>HLR</ns2:name>
+								<ns2:value>21</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SIMNumber</ns2:name>
+								<ns2:value>89410112191213220319</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>7</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>SIM Card</ns0:name>
+						<ns0:category>SIM Card</ns0:category>
+						<ns0:externalReference>0</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Carte SIM</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>SIM Card</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Carta SIM</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>SIM Karte</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>BSC:SUB:9432969:5-4RWTN5D
+					</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>BSC:BAC:9874523</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2012-09-28T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2012-09-28T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-4RY8EHA</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>SIM Card</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Carte SIM</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>SIM Card</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Carta SIM</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>SIM Karte</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>HLR</ns2:name>
+								<ns2:value>21</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SIMNumber</ns2:name>
+								<ns2:value>89410112191213452391</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>7</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>SIM Card</ns0:name>
+						<ns0:category>SIM Card</ns0:category>
+						<ns0:externalReference>0</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Carte SIM</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>SIM Card</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Carta SIM</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>SIM Karte</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2012-09-28T12:01:45+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2012-09-28T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-2CWUTT2</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>COMBOX basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>COMBOX basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>COMBOX basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>COMBOX basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>COMBOX basic</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>COMBOX basic</ns0:name>
+						<ns0:category>Option Offer</ns0:category>
+						<ns0:externalReference>BSC:SEN:325</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>COMBOX basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>COMBOX basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>COMBOX basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>COMBOX basic</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-17T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-2CWUTT6</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Mobile Unlimited</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Mobile Unlimited</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Mobile Unlimited</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Mobile Unlimited</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Mobile Unlimited</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>PWLAN Volume</ns0:name>
+						<ns0:category>Option Offer</ns0:category>
+						<ns0:externalReference>BSC:SEP:454</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Mobile Unlimited</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Mobile Unlimited</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Mobile Unlimited</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Mobile Unlimited</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-17T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">BSC:SUB:9432969:5-5XWDYWN</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>Partner</ns2:name>
+								<ns2:value>No partner</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>PartnerMSISDN</ns2:name>
+								<ns2:value>No partner</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Tutto benefit (infinity L)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>avantage Tutto (infinity L)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Tutto benefit (infinity L)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>vantaggio Tutto (infinity L)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Tutto-Vorteil (infinity L)</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>TUTTO Benefit RES Libero L</ns0:name>
+						<ns0:category>Option Offer</ns0:category>
+						<ns0:externalReference>BSC:SEP:635</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Rabais sur le prix de l'abonnement de CHF 20.- par
+									mois</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Discount on NATEL base fee CHF 20.- per month.
+								</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>CHF 20.- di sconto mesile sul canone d'abbonamento.
+								</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Rabatt auf der NATEL Grundgebühr von CHF 20.- pro
+									Monat.</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-17T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>-20.0</ns0:listPrice>
+					<ns0:specialPrice>-20.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>BSC:SUB:9432969</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>BSC:SUB:9432969
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration>24</ns0:minimumContractDuration>
+				<ns0:contractConfirmationDate>2011-08-08
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-08-07</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:phoneNumber>+41 795511679</ns0:phoneNumber>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour>gut</ns0:paymentBehaviour>
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1597827149</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903082</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType />
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>TV at chalet basic</ns0:name>
+					<ns0:category>Bundle</ns0:category>
+					<ns0:externalReference>BPO_BUNDLE</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Swisscom TV Basic Chalet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Swisscom TV Basic Chalet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Swisscom TV Basic Chalet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Swisscom TV Basic Chalet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>10000002903082</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000002903082</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000002903082</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:locationAddress cvsRevision="$Version: $"
+					version="v5.0.16">
+					<ns1:keys xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">62632731</ns2:primaryKey>
+					</ns1:keys>
+					<ns1:locationId xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">62632731</ns1:locationId>
+					<ns1:zipCode xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">7500</ns1:zipCode>
+					<ns1:city xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">St. Moritz</ns1:city>
+					<ns1:country xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">CH</ns1:country>
+					<ns1:language xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">de</ns1:language>
+					<ns1:houseNumber xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">34</ns1:houseNumber>
+					<ns1:houseName xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">house1A</ns1:houseName>
+					<ns1:locationSupplement
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">strasse</ns1:locationSupplement>
+					<ns1:street xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">Via dal Bagn</ns1:street>
+				</ns0:locationAddress>
+				<ns0:servicePointId>ALL:SUB:10000002903137</ns0:servicePointId>
+				<ns0:bundleId />
+				<ns0:listPrice>21.0</ns0:listPrice>
+				<ns0:specialPrice>21.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Swisscom TV Basic Chalet (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Swisscom TV Basic Chalet (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Swisscom TV Basic Chalet (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Swisscom TV Basic Chalet (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Swisscom TV Basic Chalet (all IP)</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2030-01-01
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement>
+					<ns0:agreementStartDate>2013-03-23</ns0:agreementStartDate>
+					<ns0:agreementEndDate>2014-03-22</ns0:agreementEndDate>
+					<ns0:minimumContractDuration>12</ns0:minimumContractDuration>
+					<ns0:minimumContractDurationUOM>Months
+					</ns0:minimumContractDurationUOM>
+					<ns0:termsOfNotice>2</ns0:termsOfNotice>
+					<ns0:termsOfNoticeUOM>Months</ns0:termsOfNoticeUOM>
+				</ns0:agreement>
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour>gut</ns0:paymentBehaviour>
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1367647892</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209010</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType />
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Divertimento 3 Star</ns0:name>
+					<ns0:category>Bundle</ns0:category>
+					<ns0:externalReference>BPO_BUNDLE</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Vivo Libero * * *</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Vivo Libero * * *</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Vivo Libero * * *</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Vivo Libero * * *</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>10000003209010</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000003209010</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000003209010</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:locationAddress cvsRevision="$Version: $"
+					version="v5.0.16">
+					<ns1:keys xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">62276251</ns2:primaryKey>
+					</ns1:keys>
+					<ns1:locationId xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">62276251</ns1:locationId>
+					<ns1:zipCode xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">6900</ns1:zipCode>
+					<ns1:city xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">Lugano</ns1:city>
+					<ns1:country xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">CH</ns1:country>
+					<ns1:language xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">de</ns1:language>
+					<ns1:houseNumber xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">3</ns1:houseNumber>
+					<ns1:houseName xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">house1A</ns1:houseName>
+					<ns1:locationSupplement
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">strasse</ns1:locationSupplement>
+					<ns1:street xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">via Carlo Maderno</ns1:street>
+				</ns0:locationAddress>
+				<ns0:servicePointId>ALL:SUB:10000003209207</ns0:servicePointId>
+				<ns0:bundleId />
+				<ns0:listPrice>89.0</ns0:listPrice>
+				<ns0:specialPrice>89.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Vivo Libero 3 Star (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Vivo Libero 3 Star (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Vivo Libero 3 Star (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Vivo Libero 3 Star (all IP)</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Vivo Libero * * * (all IP)</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2011-08-06
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement>
+					<ns0:agreementStartDate>2011-08-06</ns0:agreementStartDate>
+					<ns0:agreementEndDate>2012-08-05</ns0:agreementEndDate>
+					<ns0:minimumContractDuration>12</ns0:minimumContractDuration>
+					<ns0:minimumContractDurationUOM>Months
+					</ns0:minimumContractDurationUOM>
+					<ns0:termsOfNotice>2</ns0:termsOfNotice>
+					<ns0:termsOfNoticeUOM>Months</ns0:termsOfNoticeUOM>
+				</ns0:agreement>
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1597827149</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903137</ns2:primaryKey>
+					</ns1:keys>
+					<ns2:attributeList
+						xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+						<ns2:attribute>
+							<ns2:name>AccessProtocol</ns2:name>
+							<ns2:value>VDSL</ns2:value>
+						</ns2:attribute>
+					</ns2:attributeList>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Access Product</ns0:name>
+					<ns0:category>Access</ns0:category>
+					<ns0:externalReference>PO_ALLIP_ACCESS</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Anschluss</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Access</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Collegamento</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Raccordement</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>AC0.000.433.144</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000002903137</ns0:referenceNumber1>
+				<ns0:referenceNumber2 />
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:locationAddress cvsRevision="$Version: $"
+					version="v5.0.16">
+					<ns1:keys xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">62632731</ns2:primaryKey>
+					</ns1:keys>
+					<ns1:locationId xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">62632731</ns1:locationId>
+					<ns1:zipCode xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">7500</ns1:zipCode>
+					<ns1:city xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">St. Moritz</ns1:city>
+					<ns1:country xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">CH</ns1:country>
+					<ns1:language xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">de</ns1:language>
+					<ns1:houseNumber xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">34</ns1:houseNumber>
+					<ns1:houseName xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">house1A</ns1:houseName>
+					<ns1:locationSupplement
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">strasse</ns1:locationSupplement>
+					<ns1:street xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">Via dal Bagn</ns1:street>
+				</ns0:locationAddress>
+				<ns0:servicePointId />
+				<ns0:bundleId />
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>AccessProtocol</ns1:name>
+						<ns1:value>VDSL</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Anschluss</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Access</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Collegamento</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Raccordement</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Access Product</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2030-01-01
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1367647892</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209207</ns2:primaryKey>
+					</ns1:keys>
+					<ns2:attributeList
+						xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+						<ns2:attribute>
+							<ns2:name>AccessProtocol</ns2:name>
+							<ns2:value>VDSL</ns2:value>
+						</ns2:attribute>
+					</ns2:attributeList>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Access Product</ns0:name>
+					<ns0:category>Access</ns0:category>
+					<ns0:externalReference>PO_ALLIP_ACCESS</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Anschluss</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Access</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Collegamento</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Raccordement</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>AC0.000.473.009</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000003209207</ns0:referenceNumber1>
+				<ns0:referenceNumber2 />
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:locationAddress cvsRevision="$Version: $"
+					version="v5.0.16">
+					<ns1:keys xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">62276251</ns2:primaryKey>
+					</ns1:keys>
+					<ns1:locationId xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">62276251</ns1:locationId>
+					<ns1:zipCode xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">6900</ns1:zipCode>
+					<ns1:city xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">Lugano</ns1:city>
+					<ns1:country xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">CH</ns1:country>
+					<ns1:language xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">de</ns1:language>
+					<ns1:houseNumber xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">3</ns1:houseNumber>
+					<ns1:street xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/location">via Carlo Maderno</ns1:street>
+				</ns0:locationAddress>
+				<ns0:servicePointId />
+				<ns0:bundleId />
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>AccessProtocol</ns1:name>
+						<ns1:value>VDSL</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Anschluss</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Access</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Collegamento</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Raccordement</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Access Product</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2030-01-01
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1597827149</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903087</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Internet</ns0:name>
+					<ns0:category>Internet-N</ns0:category>
+					<ns0:externalReference>PO_INTERNET</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>1597827149</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000002903087</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000002903082</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId>ALL:SUB:10000002903082</ns0:bundleId>
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903088</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>BarringProfile</ns2:name>
+								<ns2:value />
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Broadband Internet Mikro</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>DSL mikro</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>DSL mikro</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>DSL mikro</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>DSL mikro</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Internet Mikro</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_INTERNET_MIKRO</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>DSL mikro</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>DSL mikro</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>DSL mikro</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>DSL mikro</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000002903088</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.807.664</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>ALL:SUB:10000002903087
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000002903087
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2030-01-01
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement>
+					<ns0:agreementStartDate>2013-03-23</ns0:agreementStartDate>
+					<ns0:agreementEndDate>2014-03-22</ns0:agreementEndDate>
+					<ns0:minimumContractDuration>1</ns0:minimumContractDuration>
+					<ns0:minimumContractDurationUOM>Years
+					</ns0:minimumContractDurationUOM>
+					<ns0:termsOfNoticeUOM />
+				</ns0:agreement>
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1367647892</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209017</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Internet</ns0:name>
+					<ns0:category>Internet-N</ns0:category>
+					<ns0:externalReference>PO_INTERNET</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Internet</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>1367647892</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000003209017</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000003209010</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId>ALL:SUB:10000003209010</ns0:bundleId>
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Internet</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003322095</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>BarringProfile</ns2:name>
+								<ns2:value />
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Broadband Internet Midrange</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Broadband Internet (max. 10/1)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Broadband Internet (max. 10/1)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Broadband Internet (max. 10/1)</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Broadband Internet (max. 10/1)</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Internet Midrange</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_INTERNET_MIDRANGE
+						</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Broadband Internet (max. 10/1 - tbd)</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Broadband Internet (max. 10/1 - tbd)</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Broadband Internet (max. 10/1 - tbd)</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Broadband Internet (max. 10/1 - tbd)</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003322095</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.909.078</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-15T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209017
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209027</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>PWLAN access</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>L'accès PWLAN</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>PWLAN access</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Accesso PWLAN</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>PWLAN-Zugang</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Public Wireless LAN Access</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_PUBLIC_WIRELESS_LAN_ACCESS
+						</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Accès PWLAN</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>PWLAN access</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Accesso PWLAN</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>PWLAN-Zugang</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209027</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.908.882</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209017
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209034</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>SMS Plus</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>SMS Plus</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>SMS Plus</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>SMS Plus</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>SMS Plus</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>SMS Plus</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_SMS_PLUS</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>SMS Plus</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>SMS Plus</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>SMS Plus</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>SMS Plus</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209034</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.909.109</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209017
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209028</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Internet Service Package Classic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Service Package Classic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Service Package Classic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Service Package Classic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Service Package Classic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Internet Service Package Classic</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_INTERNET_SERVICE_PACKAGE_CLASSIC
+						</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Service Package Classic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Service Package Classic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Service Package Classic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Service Package Classic</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209028</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209017
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209032</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>SMS-Box</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>SMS-Box</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>SMS-Box</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>SMS-Box</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>SMS-Box</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>SMS Box</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_SMS_BOX</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>SMS-Box</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>SMS-Box</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>SMS-Box</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>SMS-Box</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209032</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.909.069</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209028
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209030</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Email Service</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Service E-Mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>E-Mail Service</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Servizio E-Mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>E-Mail Dienst</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Email Service</ns0:name>
+						<ns0:category>Internet-N</ns0:category>
+						<ns0:externalReference>PO_MAILBOX</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Service E-Mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>E-Mail Service</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Servizio E-Mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>E-Mail Dienst</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209030</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.908.881</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209017
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209028
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2011-08-06
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1597827149</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903083</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Bluewin TV Bundle</ns0:name>
+					<ns0:category>TV-N</ns0:category>
+					<ns0:externalReference>PO_BLUEWIN_TV</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>10000002903083</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000002903083</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000002903082</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId>ALL:SUB:10000002903082</ns0:bundleId>
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>TV</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903084</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>BarringProfile</ns2:name>
+								<ns2:value />
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>LanguageRegionId</ns2:name>
+								<ns2:value>DEU</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>StbAmount</ns2:name>
+								<ns2:value>1</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>TV Basic</ns0:name>
+						<ns0:category>TV-N</ns0:category>
+						<ns0:externalReference>PO_TV_BASIC</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000002903084</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.807.676</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000002903083
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000002903083
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000002903086</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>TV Italiano+ Pack - Included</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Pack linguistique Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Language Package Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Pacchetto lingua Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Sprachpaket Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Bluewin TV Italiano+ Pack - Included</ns0:name>
+						<ns0:category>TV-N</ns0:category>
+						<ns0:externalReference>PO_BLUEWIN_TV_ITALIANO_PLUS_PACK
+						</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Pack linguistique Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Language Package Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Pacchetto lingua Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Sprachpaket Italiano+</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000002903086</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.808.381</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-03-20T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-03-22T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000002903083
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000002903083
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2030-01-01
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement>
+					<ns0:agreementStartDate>2013-03-23</ns0:agreementStartDate>
+					<ns0:agreementEndDate>2014-03-22</ns0:agreementEndDate>
+					<ns0:minimumContractDuration>1</ns0:minimumContractDuration>
+					<ns0:minimumContractDurationUOM>Years
+					</ns0:minimumContractDurationUOM>
+					<ns0:termsOfNoticeUOM />
+				</ns0:agreement>
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour>gut</ns0:paymentBehaviour>
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber>1367647892</ns0:blueAditAccountNumber>
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209012</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType>eConfigurator</ns0:configurationType>
+				<ns0:subType>ALL IP</ns0:subType>
+				<ns0:product>
+					<ns0:name>Bluewin TV Bundle</ns0:name>
+					<ns0:category>TV-N</ns0:category>
+					<ns0:externalReference>PO_BLUEWIN_TV</ns0:externalReference>
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Swisscom TV</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>10000003209012</ns0:subscriberNumber>
+				<ns0:referenceNumber1>ALL:SUB:10000003209012</ns0:referenceNumber1>
+				<ns0:referenceNumber2>ALL:SUB:10000003209010</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId>ALL:SUB:10000003209010</ns0:bundleId>
+				<ns0:listPrice>0.0</ns0:listPrice>
+				<ns0:specialPrice>0.0</ns0:specialPrice>
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Swisscom TV</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>TV</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName>ALL:BAC:1515113</ns0:billingProfileName>
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209013</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>BarringProfile</ns2:name>
+								<ns2:value />
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>LanguageRegionId</ns2:name>
+								<ns2:value>DEU</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>StbAmount</ns2:name>
+								<ns2:value>1</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Swisscom TV basic</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>TV Basic</ns0:name>
+						<ns0:category>TV-N</ns0:category>
+						<ns0:externalReference>PO_TV_BASIC</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Swisscom TV basic</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209013</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.909.012</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209012
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209012
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209014</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Teleclub Sport Live Events</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>1 Teleclub Sport Live Event</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>1 Teleclub Sport Live Event</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>1 Teleclub Sport Live Event</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>1 Teleclub Sport Live Event</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Free Pay-per-View Libero 3 Star</ns0:name>
+						<ns0:category>Manual Promotion</ns0:category>
+						<ns0:externalReference>PO_PROMO</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>1 Teleclub Sport Live Event</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>1 Teleclub Sport Live Event</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>1 Teleclub Sport Live Event</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>1 Teleclub Sport Live Event</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209014</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209012
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209012
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209015</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>Language</ns2:name>
+								<ns2:value>ITA</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>TV magazine</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>TV magazine</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>TV magazine</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>TV magazzino</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>TV Magazin</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>TV Magazin</ns0:name>
+						<ns0:category>TV-N</ns0:category>
+						<ns0:externalReference>PO_TV_MAGAZIN</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>TV magazine</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>TV magazine</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>TV magazzino</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>TV Magazin</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209015</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209012
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209012
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">ALL:SUB:10000003209016</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>TV Italiano+ Pack - Included</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Pack linguistique Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Language Package Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Pacchetto lingua Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Sprachpaket Italiano+</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>SimType</ns2:name>
+								<ns2:value>3</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType>ALL IP</ns0:subType>
+					<ns0:product>
+						<ns0:name>Bluewin TV Italiano+ Pack - Included</ns0:name>
+						<ns0:category>TV-N</ns0:category>
+						<ns0:externalReference>PO_BLUEWIN_TV_ITALIANO_PLUS_PACK
+						</ns0:externalReference>
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Pack linguistique Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Language Package Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Pacchetto lingua Italiano+</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Sprachpaket Italiano+</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1>ALL:SUB:10000003209016</ns0:referenceNumber1>
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3>SE0.000.910.139</ns0:referenceNumber3>
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey>ALL:BAC:1515113</ns0:primaryKey>
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-04-09T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-04-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:listPrice>0.0</ns0:listPrice>
+					<ns0:specialPrice>0.0</ns0:specialPrice>
+					<ns0:rootSubscriptionId>ALL:SUB:10000003209012
+					</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>ALL:SUB:10000003209012
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration />
+				<ns0:contractConfirmationDate>2011-08-06
+				</ns0:contractConfirmationDate>
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType />
+				<ns0:paymentBehaviour />
+				<ns0:aboType />
+			</ns0:subscriptionHeaderList>
+			<ns0:subscriptionHeaderList>
+				<ns0:blueAditAccountNumber />
+				<ns1:subscription
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+					cvsRevision="$Version: $" version="v5.0.18">
+					<ns1:status>active</ns1:status>
+					<ns1:keys>
+						<ns2:primaryKey
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SER:1367647892</ns2:primaryKey>
+					</ns1:keys>
+				</ns1:subscription>
+				<ns0:configurationType>BlueAdit</ns0:configurationType>
+				<ns0:subType>Subscription</ns0:subType>
+				<ns0:product>
+					<ns0:name>Mailbox All-IP</ns0:name>
+					<ns0:category>Internet</ns0:category>
+					<ns0:externalReference />
+					<ns0:translatedNames>
+						<ns0:translatedName>
+							<ns0:language>de</ns0:language>
+							<ns0:name>Mailbox</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>en</ns0:language>
+							<ns0:name>Mailbox</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>it</ns0:language>
+							<ns0:name>Mailbox</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+						<ns0:translatedName>
+							<ns0:language>fr</ns0:language>
+							<ns0:name>Mailbox</ns0:name>
+							<ns0:type />
+						</ns0:translatedName>
+					</ns0:translatedNames>
+				</ns0:product>
+				<ns0:subscriberNumber>1367647892</ns0:subscriberNumber>
+				<ns0:referenceNumber1>+41 912347543</ns0:referenceNumber1>
+				<ns0:referenceNumber2>alessio.medici</ns0:referenceNumber2>
+				<ns0:referenceNumber3 />
+				<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+				<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+				<ns0:billingProfileDetails>
+					<ns0:primaryKey />
+				</ns0:billingProfileDetails>
+				<ns0:installDate>2009-05-23T00:00:00+02:00</ns0:installDate>
+				<ns0:timePeriod>
+					<ns1:startDateTime
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2009-05-23T00:00:00+02:00</ns1:startDateTime>
+				</ns0:timePeriod>
+				<ns0:servicePointId />
+				<ns0:bundleId />
+				<ns1:attributeList
+					xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+					<ns1:attribute>
+						<ns1:name>PendingFlag</ns1:name>
+						<ns1:value>N</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameDEU</ns1:name>
+						<ns1:value>Mailbox</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameENU</ns1:name>
+						<ns1:value>Mailbox</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameITA</ns1:name>
+						<ns1:value>Mailbox</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductInternalNameFRA</ns1:name>
+						<ns1:value>Mailbox</ns1:value>
+					</ns1:attribute>
+					<ns1:attribute>
+						<ns1:name>ProductDescription</ns1:name>
+						<ns1:value>Mailbox</ns1:value>
+					</ns1:attribute>
+				</ns1:attributeList>
+				<ns0:mutedFlag>false</ns0:mutedFlag>
+				<ns0:numberType />
+				<ns0:OBI>false</ns0:OBI>
+				<ns0:OBO>false</ns0:OBO>
+				<ns0:payerNameSCM>Medici Alessio</ns0:payerNameSCM>
+				<ns0:payerSwisscomCustomerNumber>53974833
+				</ns0:payerSwisscomCustomerNumber>
+				<ns0:billingProfileName />
+				<ns0:userName>Medici Alessio</ns0:userName>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SUB:89521971</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>Swisscom TV air Vivo Casa</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Swisscom TV air Vivo Casa</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>Swisscom TV air Vivo Casa</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>Swisscom TV air Vivo Casa</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>Swisscom TV air Vivo Casa</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Swisscom TV air Vivo Casa</ns0:name>
+						<ns0:category>Internet Option</ns0:category>
+						<ns0:externalReference />
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Swisscom TV air Vivo Casa</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>Swisscom TV air Vivo Casa</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>Swisscom TV air Vivo Casa</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>Swisscom TV air Vivo Casa</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber>1367647892</ns0:subscriberNumber>
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2011-08-06T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2011-08-06T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>SAM:SER:1367647892</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>SAM:SER:1367647892
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SUB:65429738</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>E-mail Option Name</ns2:name>
+								<ns2:value>SAM:ABO:2100</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>eMail Adresse</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Adresse e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>E-mail address</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>indirizzo e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>E-Mail Adresse</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Main Email Option</ns0:name>
+						<ns0:category>eMailAddress</ns0:category>
+						<ns0:externalReference />
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Adresse e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>E-mail address</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>indirizzo e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>E-Mail Adresse</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2009-07-13T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2009-07-13T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>SAM:SER:1367647892</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>SAM:SER:1367647892
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SUB:106328121</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>E-mail Option Name</ns2:name>
+								<ns2:value>SAM:ABO:2101</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>eMail Adresse</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Adresse e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>E-mail address</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>indirizzo e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>E-Mail Adresse</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Email Option</ns0:name>
+						<ns0:category>eMailAddress</ns0:category>
+						<ns0:externalReference />
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Adresse e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>E-mail address</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>indirizzo e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>E-Mail Adresse</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2012-11-05T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2012-11-05T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>SAM:SER:1367647892</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>SAM:SER:1367647892
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SUB:109958234</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>E-mail Option Name</ns2:name>
+								<ns2:value>SAM:ABO:2101</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>eMail Adresse</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Adresse e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>E-mail address</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>indirizzo e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>E-Mail Adresse</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Email Option</ns0:name>
+						<ns0:category>eMailAddress</ns0:category>
+						<ns0:externalReference />
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Adresse e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>E-mail address</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>indirizzo e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>E-Mail Adresse</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-01-14T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-01-14T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>SAM:SER:1367647892</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>SAM:SER:1367647892
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:subscriptionItemList>
+					<ns1:subscription
+						xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/subscription"
+						cvsRevision="$Version: $" version="v5.0.18">
+						<ns1:status>active</ns1:status>
+						<ns1:keys>
+							<ns2:primaryKey
+								xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">SAM:SUB:110021438</ns2:primaryKey>
+						</ns1:keys>
+						<ns2:attributeList
+							xmlns:ns2="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">
+							<ns2:attribute>
+								<ns2:name>E-mail Option Name</ns2:name>
+								<ns2:value>SAM:ABO:2101</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductDescription</ns2:name>
+								<ns2:value>eMail Adresse</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameFRA</ns2:name>
+								<ns2:value>Adresse e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameENU</ns2:name>
+								<ns2:value>E-mail address</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameITA</ns2:name>
+								<ns2:value>indirizzo e-mail</ns2:value>
+							</ns2:attribute>
+							<ns2:attribute>
+								<ns2:name>ProductInternalNameDEU</ns2:name>
+								<ns2:value>E-Mail Adresse</ns2:value>
+							</ns2:attribute>
+						</ns2:attributeList>
+					</ns1:subscription>
+					<ns0:subType />
+					<ns0:product>
+						<ns0:name>Email Option</ns0:name>
+						<ns0:category>eMailAddress</ns0:category>
+						<ns0:externalReference />
+						<ns0:translatedNames>
+							<ns0:translatedName>
+								<ns0:language>fr</ns0:language>
+								<ns0:name>Adresse e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>en</ns0:language>
+								<ns0:name>E-mail address</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>it</ns0:language>
+								<ns0:name>indirizzo e-mail</ns0:name>
+							</ns0:translatedName>
+							<ns0:translatedName>
+								<ns0:language>de</ns0:language>
+								<ns0:name>E-Mail Adresse</ns0:name>
+							</ns0:translatedName>
+						</ns0:translatedNames>
+					</ns0:product>
+					<ns0:subscriberNumber />
+					<ns0:referenceNumber1 />
+					<ns0:referenceNumber2 />
+					<ns0:referenceNumber3 />
+					<ns0:ownerAccountNumber>53974833</ns0:ownerAccountNumber>
+					<ns0:usageAccountNumber>53974833</ns0:usageAccountNumber>
+					<ns0:billingProfileDetails>
+						<ns0:primaryKey />
+					</ns0:billingProfileDetails>
+					<ns0:installDate>2013-01-15T00:00:00+02:00</ns0:installDate>
+					<ns0:timePeriod>
+						<ns1:startDateTime
+							xmlns:ns1="http://www.swisscom.ch/ns/EAI/CMM/v5-0/basicTypes">2013-01-15T00:00:00+02:00</ns1:startDateTime>
+					</ns0:timePeriod>
+					<ns0:rootSubscriptionId>SAM:SER:1367647892</ns0:rootSubscriptionId>
+					<ns0:parentSubscriptionId>SAM:SER:1367647892
+					</ns0:parentSubscriptionId>
+				</ns0:subscriptionItemList>
+				<ns0:minimumContractDuration />
+				<ns0:cancellationDate>2013-05-01</ns0:cancellationDate>
+				<ns0:additionalCard>false</ns0:additionalCard>
+				<ns0:phoneNumber>+41 912347543</ns0:phoneNumber>
+				<ns0:groupKey />
+				<ns0:agreement />
+				<ns0:cpsFlag>false</ns0:cpsFlag>
+				<ns0:connectionType>VDSL</ns0:connectionType>
+				<ns0:paymentBehaviour>gut</ns0:paymentBehaviour>
+				<ns0:aboType>1100</ns0:aboType>
+			</ns0:subscriptionHeaderList>
+		</ns0:getContractsResponse>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
