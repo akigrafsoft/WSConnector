@@ -60,8 +60,8 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 						.getDeclaredConstructor(URL.class, QName.class)
 						.newInstance(
 								m_config.serviceUrl,
-								new QName(m_config.namespaceURI,
-										m_config.localServicePart));
+								new QName(m_config.getNamespaceURI(), m_config
+										.getLocalServicePart()));
 			} catch (InstantiationException | IllegalAccessException
 					| IllegalArgumentException | InvocationTargetException
 					| NoSuchMethodException | SecurityException e) {
@@ -80,9 +80,9 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 		// MyHelloService service = new MyHelloService(wsdlLocation,
 		// serviceName);
 
-		session.setUserObject(m_service.getPort(new QName(
-				m_config.namespaceURI, m_config.localPortPart),
-				m_config.portClass));
+		session.setUserObject(m_service.getPort(
+				new QName(m_config.getNamespaceURI(), m_config
+						.getLocalPortPart()), m_config.portClass));
 		this.sessionStarted(session);
 	}
 

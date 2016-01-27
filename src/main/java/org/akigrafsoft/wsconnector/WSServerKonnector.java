@@ -37,7 +37,7 @@ public class WSServerKonnector extends Konnector {
 		WSServerConfig l_config = (WSServerConfig) config;
 
 		try {
-			m_url = new URL(l_config.url);
+			m_url = new URL(l_config.getUrl());
 		} catch (MalformedURLException e) {
 			// should not happen as it was audited
 		}
@@ -98,8 +98,8 @@ public class WSServerKonnector extends Konnector {
 
 		boolean response = false;
 		try {
-			response = dataobject
-					.waitForReponse(m_config.maxProcessingTimeSeconds);
+			response = dataobject.waitForReponse(m_config
+					.getMaxProcessingTimeSeconds());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -111,7 +111,7 @@ public class WSServerKonnector extends Konnector {
 		} else {
 			ActivityLogger.warn(buildActivityLog(message,
 					"handleReceive no response within maxProcessingTimeSeconds<"
-							+ m_config.maxProcessingTimeSeconds + ">"));
+							+ m_config.getMaxProcessingTimeSeconds() + ">"));
 		}
 	}
 

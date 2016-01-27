@@ -6,16 +6,56 @@ import java.net.URL;
 import com.akigrafsoft.knetthreads.ExceptionAuditFailed;
 import com.akigrafsoft.knetthreads.konnector.KonnectorConfiguration;
 
+/**
+ * Configuration class for {@link WSServerKonnector}
+ * <p>
+ * <b>This MUST be a Java bean</b>
+ * </p>
+ * 
+ * @author kmoyse
+ * 
+ */
 public class WSServerConfig extends KonnectorConfiguration {
 
-	public String url = "http://localhost:8080/";
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8067551870595317417L;
 
-	public long maxProcessingTimeSeconds = 10;
-
-	public String wsServerImplementorClassName = null;
+	private String url = "http://localhost:8080/";
+	private long maxProcessingTimeSeconds = 10;
+	private String wsServerImplementorClassName = null;
 
 	@SuppressWarnings("rawtypes")
 	Class serverImplementorClass;
+
+	// ------------------------------------------------------------------------
+	// Java Bean
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public long getMaxProcessingTimeSeconds() {
+		return maxProcessingTimeSeconds;
+	}
+
+	public void setMaxProcessingTimeSeconds(long maxProcessingTimeSeconds) {
+		this.maxProcessingTimeSeconds = maxProcessingTimeSeconds;
+	}
+
+	public String getWsServerImplementorClassName() {
+		return wsServerImplementorClassName;
+	}
+
+	public void setWsServerImplementorClassName(
+			String wsServerImplementorClassName) {
+		this.wsServerImplementorClassName = wsServerImplementorClassName;
+	}
 
 	// ------------------------------------------------------------------------
 	// Fluent API
@@ -41,6 +81,7 @@ public class WSServerConfig extends KonnectorConfiguration {
 	}
 
 	// ------------------------------------------------------------------------
+	// Configuration
 
 	@SuppressWarnings("unchecked")
 	@Override
