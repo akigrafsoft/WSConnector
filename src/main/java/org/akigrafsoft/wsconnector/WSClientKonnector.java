@@ -7,13 +7,14 @@ import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 
 import com.akigrafsoft.knetthreads.ExceptionDuplicate;
+import com.akigrafsoft.knetthreads.konnector.ExceptionCreateSessionFailed;
 import com.akigrafsoft.knetthreads.konnector.KonnectorConfiguration;
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;
 import com.akigrafsoft.knetthreads.konnector.SessionBasedClientKonnector;
 
 public class WSClientKonnector extends SessionBasedClientKonnector {
 
-	private WSClientConfig m_config;
+	// private WSClientConfig m_config;
 	private Service m_service = null;
 	private WSClientImplementor m_clientImplementor = null;
 
@@ -22,11 +23,15 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 	}
 
 	@Override
+	public Class<? extends KonnectorConfiguration> getConfigurationClass() {
+		return WSClientConfig.class;
+	}
+
+	@Override
 	protected void doLoadConfig(KonnectorConfiguration config) {
 		super.doLoadConfig(config);
 
 		WSClientConfig l_config = (WSClientConfig) config;
-		m_config = l_config;
 
 		try {
 			m_clientImplementor = (WSClientImplementor) l_config.clientImplementorClass
@@ -56,12 +61,14 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 	public void async_startSession(Session session) {
 		if (m_service == null) {
 			try {
-				m_service = (Service) m_config.serviceClass
+				m_service = (Service) ((WSClientConfig) getConfiguration()).serviceClass
 						.getDeclaredConstructor(URL.class, QName.class)
 						.newInstance(
-								m_config.serviceUrl,
-								new QName(m_config.getNamespaceURI(), m_config
-										.getLocalServicePart()));
+								((WSClientConfig) getConfiguration()).serviceUrl,
+								new QName(((WSClientConfig) getConfiguration())
+										.getNamespaceURI(),
+										((WSClientConfig) getConfiguration())
+												.getLocalServicePart()));
 			} catch (InstantiationException | IllegalAccessException
 					| IllegalArgumentException | InvocationTargetException
 					| NoSuchMethodException | SecurityException e) {
@@ -80,9 +87,10 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 		// MyHelloService service = new MyHelloService(wsdlLocation,
 		// serviceName);
 
-		session.setUserObject(m_service.getPort(
-				new QName(m_config.getNamespaceURI(), m_config
-						.getLocalPortPart()), m_config.portClass));
+		session.setUserObject(m_service.getPort(new QName(
+				((WSClientConfig) getConfiguration()).getNamespaceURI(),
+				((WSClientConfig) getConfiguration()).getLocalPortPart()),
+				((WSClientConfig) getConfiguration()).portClass));
 		this.sessionStarted(session);
 	}
 

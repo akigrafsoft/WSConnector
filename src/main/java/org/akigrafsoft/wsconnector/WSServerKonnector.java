@@ -21,7 +21,6 @@ public class WSServerKonnector extends Konnector {
 
 	private Endpoint m_endpoint;
 
-	private WSServerConfig m_config;
 	private URL m_url;
 
 	private Object m_serverImplementor;
@@ -30,9 +29,15 @@ public class WSServerKonnector extends Konnector {
 		super(name);
 	}
 
+	@Override
+	public Class<? extends KonnectorConfiguration> getConfigurationClass() {
+		return WSServerConfig.class;
+	}
+
 	@SuppressWarnings("unchecked")
 	@Override
 	protected void doLoadConfig(KonnectorConfiguration config) {
+		super.doLoadConfig(config);
 
 		WSServerConfig l_config = (WSServerConfig) config;
 
@@ -51,8 +56,6 @@ public class WSServerKonnector extends Konnector {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		m_config = l_config;
 	}
 
 	@Override
@@ -98,8 +101,9 @@ public class WSServerKonnector extends Konnector {
 
 		boolean response = false;
 		try {
-			response = dataobject.waitForReponse(m_config
-					.getMaxProcessingTimeSeconds());
+			response = dataobject
+					.waitForReponse(((WSServerConfig) getConfiguration())
+							.getMaxProcessingTimeSeconds());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -109,9 +113,11 @@ public class WSServerKonnector extends Konnector {
 				ActivityLogger.info(buildActivityLog(message, "responding<"
 						+ dataobject.operationName + ">"));
 		} else {
-			ActivityLogger.warn(buildActivityLog(message,
+			ActivityLogger.warn(buildActivityLog(
+					message,
 					"handleReceive no response within maxProcessingTimeSeconds<"
-							+ m_config.getMaxProcessingTimeSeconds() + ">"));
+							+ ((WSServerConfig) getConfiguration())
+									.getMaxProcessingTimeSeconds() + ">"));
 		}
 	}
 
