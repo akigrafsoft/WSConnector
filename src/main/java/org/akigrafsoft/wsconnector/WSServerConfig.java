@@ -52,19 +52,12 @@ public class WSServerConfig extends KonnectorConfiguration {
 		return wsServerImplementorClassName;
 	}
 
-	public void setWsServerImplementorClassName(
-			String wsServerImplementorClassName) {
+	public void setWsServerImplementorClassName(String wsServerImplementorClassName) {
 		this.wsServerImplementorClassName = wsServerImplementorClassName;
 	}
 
 	// ------------------------------------------------------------------------
 	// Fluent API
-	/**
-	 * Set URL to listen on
-	 * 
-	 * @param value
-	 * @return
-	 */
 	public WSServerConfig url(String value) {
 		this.url = value;
 		return this;
@@ -90,19 +83,16 @@ public class WSServerConfig extends KonnectorConfiguration {
 		try {
 			new URL(this.url);
 		} catch (MalformedURLException e) {
-			throw new ExceptionAuditFailed("MalformedURLException:"
-					+ e.getMessage());
+			throw new ExceptionAuditFailed("MalformedURLException:" + e.getMessage());
 		}
 
 		try {
-			serverImplementorClass = Class
-					.forName(wsServerImplementorClassName);
+			serverImplementorClass = Class.forName(wsServerImplementorClassName);
 			serverImplementorClass.getConstructor(WSServerKonnector.class);
-		} catch (ClassNotFoundException | IllegalArgumentException
-				| NoSuchMethodException | SecurityException e) {
+		} catch (ClassNotFoundException | IllegalArgumentException | NoSuchMethodException | SecurityException e) {
 			e.printStackTrace();
-			throw new ExceptionAuditFailed("bad wsServerImplementorClassName <"
-					+ wsServerImplementorClassName + "> " + e.getMessage());
+			throw new ExceptionAuditFailed(
+					"bad wsServerImplementorClassName <" + wsServerImplementorClassName + "> " + e.getMessage());
 		}
 	}
 }

@@ -637,7 +637,8 @@
 							<ns0:translatedName>
 								<ns0:language>fr</ns0:language>
 								<ns0:name>Rabais sur le prix de l'abonnement de CHF 20.- par
-									mois</ns0:name>
+									mois
+								</ns0:name>
 							</ns0:translatedName>
 							<ns0:translatedName>
 								<ns0:language>en</ns0:language>
@@ -652,7 +653,8 @@
 							<ns0:translatedName>
 								<ns0:language>de</ns0:language>
 								<ns0:name>Rabatt auf der NATEL Grundgebühr von CHF 20.- pro
-									Monat.</ns0:name>
+									Monat.
+								</ns0:name>
 							</ns0:translatedName>
 						</ns0:translatedNames>
 					</ns0:product>

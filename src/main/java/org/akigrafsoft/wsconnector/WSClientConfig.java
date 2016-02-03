@@ -113,12 +113,6 @@ public class WSClientConfig extends SessionBasedClientKonnectorConfiguration {
 
 	// ------------------------------------------------------------------------
 	// Fluent API
-	/**
-	 * Set URL to listen on
-	 * 
-	 * @param value
-	 * @return
-	 */
 	public WSClientConfig url(String value) {
 		this.url = value;
 		return this;
