@@ -48,10 +48,9 @@ public class WSServerKonnector extends Konnector {
 		}
 
 		try {
-			m_serverImplementor = (Object) l_config.serverImplementorClass
-					.getConstructor(WSServerKonnector.class).newInstance(this);
-		} catch (InstantiationException | IllegalAccessException
-				| IllegalArgumentException | InvocationTargetException
+			m_serverImplementor = (Object) l_config.serverImplementorClass.getConstructor(WSServerKonnector.class)
+					.newInstance(this);
+		} catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
 				| NoSuchMethodException | SecurityException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,6 +65,7 @@ public class WSServerKonnector extends Konnector {
 		// TODO : this is different and more complex if https is required
 
 		this.setStarted();
+		this.setAvailable();
 		return CommandResult.Success;
 	}
 
@@ -84,6 +84,7 @@ public class WSServerKonnector extends Konnector {
 	@Override
 	protected CommandResult doStop() {
 		m_endpoint.stop();
+		this.setUnavailable();
 		this.setStopped();
 		return CommandResult.Success;
 	}
@@ -101,23 +102,17 @@ public class WSServerKonnector extends Konnector {
 
 		boolean response = false;
 		try {
-			response = dataobject
-					.waitForReponse(((WSServerConfig) getConfiguration())
-							.getMaxProcessingTimeSeconds());
+			response = dataobject.waitForReponse(((WSServerConfig) getConfiguration()).getMaxProcessingTimeSeconds());
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 
 		if (response) {
 			if (ActivityLogger.isInfoEnabled())
-				ActivityLogger.info(buildActivityLog(message, "responding<"
-						+ dataobject.operationName + ">"));
+				ActivityLogger.info(buildActivityLog(message, "responding<" + dataobject.operationName + ">"));
 		} else {
-			ActivityLogger.warn(buildActivityLog(
-					message,
-					"handleReceive no response within maxProcessingTimeSeconds<"
-							+ ((WSServerConfig) getConfiguration())
-									.getMaxProcessingTimeSeconds() + ">"));
+			ActivityLogger.warn(buildActivityLog(message, "handleReceive no response within maxProcessingTimeSeconds<"
+					+ ((WSServerConfig) getConfiguration()).getMaxProcessingTimeSeconds() + ">"));
 		}
 	}
 
