@@ -24,11 +24,11 @@
 			<soap:operation soapAction="sayHello" />
 			<input>
 				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
-					namespace="urn:examples:helloservice" use="encoded" />
+					namespace="urn:examples:helloservice" use="literal" />
 			</input>
 			<output>
 				<soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
-					namespace="urn:examples:helloservice" use="encoded" />
+					namespace="urn:examples:helloservice" use="literal" />
 			</output>
 		</operation>
 	</binding>
