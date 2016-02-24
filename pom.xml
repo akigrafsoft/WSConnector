@@ -23,6 +23,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>1.9</version> 
 				<configuration>
 					<sourceDestDir>${basedir}/src/test/java</sourceDestDir>
 					<xnocompile>true</xnocompile>
