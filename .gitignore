@@ -2,4 +2,5 @@
 .project
 .settings/
 logs/
+src/test/java/org/akigrafsoft/wsdl/helloservice
 target/
