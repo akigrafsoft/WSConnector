@@ -1,3 +1,9 @@
+/**
+ * Open-source, by AkiGrafSoft.
+ *
+ * $Id:  $
+ *
+ **/
 package org.akigrafsoft.wsconnector;
 
 import java.net.MalformedURLException;
@@ -82,8 +88,7 @@ public class WSClientConfig extends SessionBasedClientKonnectorConfiguration {
 		return wsClientImplementorClassName;
 	}
 
-	public void setWsClientImplementorClassName(
-			String wsClientImplementorClassName) {
+	public void setWsClientImplementorClassName(String wsClientImplementorClassName) {
 		this.wsClientImplementorClassName = wsClientImplementorClassName;
 	}
 
@@ -164,8 +169,7 @@ public class WSClientConfig extends SessionBasedClientKonnectorConfiguration {
 			try {
 				serviceUrl = new URL(this.url);
 			} catch (MalformedURLException e) {
-				throw new ExceptionAuditFailed("url|MalformedURLException:"
-						+ e.getMessage());
+				throw new ExceptionAuditFailed("url|MalformedURLException:" + e.getMessage());
 			}
 		} else if (this.localWSDL != null) {
 			// ClassLoader classloader = Thread.currentThread()
@@ -174,12 +178,10 @@ public class WSClientConfig extends SessionBasedClientKonnectorConfiguration {
 			try {
 				serviceUrl = new URL(this.localWSDL);
 			} catch (MalformedURLException e) {
-				throw new ExceptionAuditFailed(
-						"localWSDL|MalformedURLException:" + e.getMessage());
+				throw new ExceptionAuditFailed("localWSDL|MalformedURLException:" + e.getMessage());
 			}
 		} else {
-			throw new ExceptionAuditFailed(
-					"url or localWSDL must be configured");
+			throw new ExceptionAuditFailed("url or localWSDL must be configured");
 		}
 
 		try {
@@ -188,26 +190,23 @@ public class WSClientConfig extends SessionBasedClientKonnectorConfiguration {
 			serviceClass.getDeclaredConstructor(URL.class, QName.class);
 			// .newInstance(new URL(url),
 			// new QName(namespaceURI, localPart));
-		} catch (ClassNotFoundException | InstantiationException
-				| IllegalAccessException | IllegalArgumentException
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException
 				| NoSuchMethodException | SecurityException e) {
-			throw new ExceptionAuditFailed("bad wsServiceClassName <"
-					+ wsServiceClassName + "> " + e.getMessage() + e.getClass());
+			throw new ExceptionAuditFailed(
+					"bad wsServiceClassName <" + wsServiceClassName + "> " + e.getMessage() + e.getClass());
 		}
 
 		try {
 			portClass = Class.forName(wsPortClassName);
 		} catch (ClassNotFoundException e) {
-			throw new ExceptionAuditFailed("bad wsPortClassName <"
-					+ wsPortClassName + "> " + e.getMessage());
+			throw new ExceptionAuditFailed("bad wsPortClassName <" + wsPortClassName + "> " + e.getMessage());
 		}
 
 		try {
-			clientImplementorClass = Class
-					.forName(wsClientImplementorClassName);
+			clientImplementorClass = Class.forName(wsClientImplementorClassName);
 		} catch (ClassNotFoundException e) {
-			throw new ExceptionAuditFailed("bad wsClientImplementorClassName <"
-					+ wsClientImplementorClassName + "> " + e.getMessage());
+			throw new ExceptionAuditFailed(
+					"bad wsClientImplementorClassName <" + wsClientImplementorClassName + "> " + e.getMessage());
 		}
 	}
 }

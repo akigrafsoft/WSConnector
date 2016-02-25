@@ -1,3 +1,9 @@
+/**
+ * Open-source, by AkiGrafSoft.
+ *
+ * $Id:  $
+ *
+ **/
 package org.akigrafsoft.wsconnector;
 
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;

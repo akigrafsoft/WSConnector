@@ -1,3 +1,9 @@
+/**
+ * Open-source, by AkiGrafSoft.
+ *
+ * $Id:  $
+ *
+ **/
 package org.akigrafsoft.wsconnector;
 
 import java.lang.reflect.InvocationTargetException;
@@ -34,8 +40,7 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 		WSClientConfig l_config = (WSClientConfig) config;
 
 		try {
-			m_clientImplementor = (WSClientImplementor) l_config.clientImplementorClass
-					.newInstance();
+			m_clientImplementor = (WSClientImplementor) l_config.clientImplementorClass.newInstance();
 		} catch (InstantiationException | IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -49,8 +54,7 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 	}
 
 	@Override
-	protected void createSession(Session session)
-			throws ExceptionCreateSessionFailed {
+	protected void createSession(Session session) throws ExceptionCreateSessionFailed {
 		// Nothing to do here
 		// The creation of WS objects is making connection so let
 		// async_startSession do this
@@ -63,15 +67,11 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 			try {
 				m_service = (Service) ((WSClientConfig) getConfiguration()).serviceClass
 						.getDeclaredConstructor(URL.class, QName.class)
-						.newInstance(
-								((WSClientConfig) getConfiguration()).serviceUrl,
-								new QName(((WSClientConfig) getConfiguration())
-										.getNamespaceURI(),
-										((WSClientConfig) getConfiguration())
-												.getLocalServicePart()));
-			} catch (InstantiationException | IllegalAccessException
-					| IllegalArgumentException | InvocationTargetException
-					| NoSuchMethodException | SecurityException e) {
+						.newInstance(((WSClientConfig) getConfiguration()).serviceUrl,
+								new QName(((WSClientConfig) getConfiguration()).getNamespaceURI(),
+										((WSClientConfig) getConfiguration()).getLocalServicePart()));
+			} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
+					| InvocationTargetException | NoSuchMethodException | SecurityException e) {
 				// SHOULD NOT HAPPEN AS IT SHOsULD HAVE BEEN AUDITED
 				e.printStackTrace();
 				this.sessionDied(session);
@@ -87,9 +87,9 @@ public class WSClientKonnector extends SessionBasedClientKonnector {
 		// MyHelloService service = new MyHelloService(wsdlLocation,
 		// serviceName);
 
-		session.setUserObject(m_service.getPort(new QName(
-				((WSClientConfig) getConfiguration()).getNamespaceURI(),
-				((WSClientConfig) getConfiguration()).getLocalPortPart()),
+		session.setUserObject(m_service.getPort(
+				new QName(((WSClientConfig) getConfiguration()).getNamespaceURI(),
+						((WSClientConfig) getConfiguration()).getLocalPortPart()),
 				((WSClientConfig) getConfiguration()).portClass));
 		this.sessionStarted(session);
 	}
