@@ -14,12 +14,12 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.akigrafsoft.knetthreads.Dispatcher;
+import com.akigrafsoft.knetthreads.Endpoint;
+import com.akigrafsoft.knetthreads.EndpointController;
 import com.akigrafsoft.knetthreads.ExceptionAuditFailed;
 import com.akigrafsoft.knetthreads.ExceptionDuplicate;
 import com.akigrafsoft.knetthreads.FlowProcessContext;
 import com.akigrafsoft.knetthreads.Message;
-import com.akigrafsoft.knetthreads.Endpoint;
-import com.akigrafsoft.knetthreads.EndpointController;
 import com.akigrafsoft.knetthreads.RequestEnum;
 import com.akigrafsoft.knetthreads.konnector.Konnector;
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;
@@ -113,7 +113,7 @@ public class ClientServerASGTest {
 					return null;
 				}
 			};
-			m_nap.setDispatcher(new Dispatcher() {
+			m_nap.setDispatcher(new Dispatcher<RequestEnum>("foo") {
 				@Override
 				public FlowProcessContext getContext(Message message,
 						KonnectorDataobject dataobject, RequestEnum request) {

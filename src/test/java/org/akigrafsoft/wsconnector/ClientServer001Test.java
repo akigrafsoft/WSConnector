@@ -66,19 +66,16 @@ public class ClientServer001Test {
 		try {
 			m_nap = new Endpoint("test") {
 				@Override
-				public KonnectorRouter getKonnectorRouter(Message message,
-						KonnectorDataobject dataobject) {
+				public KonnectorRouter getKonnectorRouter(Message message, KonnectorDataobject dataobject) {
 					return new KonnectorRouter() {
-						public Konnector resolveKonnector(Message message,
-								KonnectorDataobject dataobject) {
+						public Konnector resolveKonnector(Message message, KonnectorDataobject dataobject) {
 							return m_serverKonnector;
 						}
 					};
 				}
 
 				@Override
-				public RequestEnum classifyInboundMessage(Message message,
-						KonnectorDataobject dataobject) {
+				public RequestEnum classifyInboundMessage(Message message, KonnectorDataobject dataobject) {
 					received = new Received(message, dataobject);
 
 					System.out.println("classifyInboundMessage");
@@ -86,8 +83,7 @@ public class ClientServer001Test {
 					// Fake flow by submitting a response directly
 					// TODO should do that in a different threads also
 					// to check it works!
-					dataobject.outboundBuffer = "Thanks "
-							+ dataobject.inboundBuffer + ", Hello!";
+					dataobject.outboundBuffer = "Thanks " + dataobject.inboundBuffer + ", Hello!";
 
 					m_serverKonnector.handle(dataobject);
 
@@ -95,10 +91,10 @@ public class ClientServer001Test {
 					return null;
 				}
 			};
-			m_nap.setDispatcher(new Dispatcher() {
+			m_nap.setDispatcher(new Dispatcher<RequestEnum>("foo") {
 				@Override
-				public FlowProcessContext getContext(Message message,
-						KonnectorDataobject dataobject, RequestEnum request) {
+				public FlowProcessContext getContext(Message message, KonnectorDataobject dataobject,
+						RequestEnum request) {
 					return null;
 				}
 			});
@@ -115,19 +111,16 @@ public class ClientServer001Test {
 		m_clientKonnector.destroy();
 		m_serverKonnector.destroy();
 
-		EndpointController.INSTANCE
-				.removeEndpoint(m_nap);
+		EndpointController.INSTANCE.removeEndpoint(m_nap);
 	}
 
 	@Test
 	public void test() {
 
 		try {
-			m_serverKonnector.configure(new WSServerConfig()
-					.url("http://localhost:" + port + "/")
-					.maxProcessingTimeSeconds(5)
-					.wsServerImplementorClassName(
-							"org.akigrafsoft.wsconnector.HelloPortTypeServer"));
+			m_serverKonnector
+					.configure(new WSServerConfig().url("http://localhost:" + port + "/").maxProcessingTimeSeconds(5)
+							.wsServerImplementorClassName("org.akigrafsoft.wsconnector.HelloPortTypeServer"));
 		} catch (ExceptionAuditFailed e) {
 			e.printStackTrace();
 			fail(e.getMessage());
@@ -136,17 +129,14 @@ public class ClientServer001Test {
 
 		try {
 			m_clientKonnector
-					.configure(new WSClientConfig()
-							.url("http://localhost:" + port + "/hello")
-							.wsServiceClassName(
-									"org.akigrafsoft.wsdl.helloservice.HelloService")
-							.wsPortClassName(
-									"org.akigrafsoft.wsdl.helloservice.HelloPortType")
-							.wsClientImplementorClassName(
-									"org.akigrafsoft.wsconnector.HelloWSClientImplementor")
-							.namespaceURI("http://wsconnector.akigrafsoft.org/")
-							.localServicePart("HelloPortTypeServerService")
-							.localPortPart("HelloWebServicePort"));
+					.configure(
+							new WSClientConfig().url("http://localhost:" + port + "/hello")
+									.wsServiceClassName("org.akigrafsoft.wsdl.helloservice.HelloService")
+									.wsPortClassName("org.akigrafsoft.wsdl.helloservice.HelloPortType")
+									.wsClientImplementorClassName(
+											"org.akigrafsoft.wsconnector.HelloWSClientImplementor")
+					.namespaceURI("http://wsconnector.akigrafsoft.org/").localServicePart("HelloPortTypeServerService")
+					.localPortPart("HelloWebServicePort"));
 		} catch (ExceptionAuditFailed e) {
 			e.printStackTrace();
 			fail(e.getMessage());
@@ -176,8 +166,7 @@ public class ClientServer001Test {
 			} catch (InterruptedException e) {
 			}
 
-			assertEquals("Thanks " + "Kevin" + ", Hello!",
-					dataobject.inboundBuffer);
+			assertEquals("Thanks " + "Kevin" + ", Hello!", dataobject.inboundBuffer);
 		}
 
 		assertEquals(Konnector.CommandResult.Success, m_clientKonnector.stop());
