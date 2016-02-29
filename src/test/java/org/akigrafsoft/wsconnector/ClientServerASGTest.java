@@ -23,6 +23,7 @@ import com.akigrafsoft.knetthreads.Message;
 import com.akigrafsoft.knetthreads.RequestEnum;
 import com.akigrafsoft.knetthreads.konnector.Konnector;
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;
+import com.akigrafsoft.knetthreads.routing.KonnectorRouter;
 
 @Ignore
 public class ClientServerASGTest {
