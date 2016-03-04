@@ -19,6 +19,7 @@ import com.akigrafsoft.knetthreads.Message;
 import com.akigrafsoft.knetthreads.RequestEnum;
 import com.akigrafsoft.knetthreads.konnector.Konnector;
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;
+import com.akigrafsoft.knetthreads.routing.EndpointRouter;
 import com.akigrafsoft.knetthreads.routing.KonnectorRouter;
 
 public class ClientServer001Test {
@@ -30,7 +31,7 @@ public class ClientServer001Test {
 	static WSClientKonnector m_clientKonnector;
 	static WSServerKonnector m_serverKonnector;
 
-	static Endpoint m_nap;
+	static Endpoint m_ep;
 
 	static int port = Utils.findFreePort();
 
@@ -65,7 +66,7 @@ public class ClientServer001Test {
 		}
 
 		try {
-			m_nap = new Endpoint("test") {
+			m_ep = new Endpoint("test") {
 				@Override
 				public KonnectorRouter getKonnectorRouter(Message message, KonnectorDataobject dataobject) {
 					return new KonnectorRouter() {
@@ -92,14 +93,19 @@ public class ClientServer001Test {
 					return null;
 				}
 			};
-			m_nap.setDispatcher(new Dispatcher<RequestEnum>("foo") {
+			m_ep.setDispatcher(new Dispatcher<RequestEnum>("foo") {
 				@Override
 				public FlowProcessContext getContext(Message message, KonnectorDataobject dataobject,
 						RequestEnum request) {
 					return null;
 				}
 			});
-			m_serverKonnector.setEndpoint(m_nap);
+			m_serverKonnector.setEndpointRouter(new EndpointRouter() {
+				@Override
+				public Endpoint resolveKonnector(Message message, KonnectorDataobject dataobject) {
+					return m_ep;
+				}
+			});
 		} catch (ExceptionDuplicate e) {
 			e.printStackTrace();
 			fail(e.getMessage());
@@ -112,7 +118,7 @@ public class ClientServer001Test {
 		m_clientKonnector.destroy();
 		m_serverKonnector.destroy();
 
-		EndpointController.INSTANCE.removeEndpoint(m_nap);
+		EndpointController.INSTANCE.removeEndpoint(m_ep);
 	}
 
 	@Test

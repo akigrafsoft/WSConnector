@@ -23,6 +23,7 @@ import com.akigrafsoft.knetthreads.Message;
 import com.akigrafsoft.knetthreads.RequestEnum;
 import com.akigrafsoft.knetthreads.konnector.Konnector;
 import com.akigrafsoft.knetthreads.konnector.KonnectorDataobject;
+import com.akigrafsoft.knetthreads.routing.EndpointRouter;
 import com.akigrafsoft.knetthreads.routing.KonnectorRouter;
 
 @Ignore
@@ -37,7 +38,7 @@ public class ClientServerASGTest {
 	static WSServerKonnector m_serverKonnector2;
 	static WSClientKonnector m_clientKonnector;
 
-	static private Endpoint m_nap;
+	static private Endpoint m_ep;
 
 	static int serverKonnectorPort = 8096;
 	static int serverKonnector2Port = 8098;
@@ -54,8 +55,7 @@ public class ClientServerASGTest {
 		}
 	}
 
-	static List<Received> received = Collections
-			.synchronizedList(new ArrayList<Received>());
+	static List<Received> received = Collections.synchronizedList(new ArrayList<Received>());
 
 	@BeforeClass
 	public static void setUpClass() {
@@ -82,21 +82,18 @@ public class ClientServerASGTest {
 		}
 
 		try {
-			m_nap = new Endpoint("test") {
+			m_ep = new Endpoint("test") {
 				@Override
-				public KonnectorRouter getKonnectorRouter(Message message,
-						KonnectorDataobject dataobject) {
+				public KonnectorRouter getKonnectorRouter(Message message, KonnectorDataobject dataobject) {
 					return new KonnectorRouter() {
-						public Konnector resolveKonnector(Message message,
-								KonnectorDataobject dataobject) {
+						public Konnector resolveKonnector(Message message, KonnectorDataobject dataobject) {
 							return m_serverKonnector;
 						}
 					};
 				}
 
 				@Override
-				public RequestEnum classifyInboundMessage(Message message,
-						KonnectorDataobject dataobject) {
+				public RequestEnum classifyInboundMessage(Message message, KonnectorDataobject dataobject) {
 
 					received.add(new Received(message, dataobject));
 
@@ -105,8 +102,7 @@ public class ClientServerASGTest {
 					// Fake flow by submitting a response directly
 					// TODO should do that in a different threads also
 					// to check it works!
-					dataobject.outboundBuffer = "Thanks "
-							+ dataobject.inboundBuffer + ", Hello!";
+					dataobject.outboundBuffer = "Thanks " + dataobject.inboundBuffer + ", Hello!";
 
 					m_serverKonnector.handle(dataobject);
 
@@ -114,14 +110,19 @@ public class ClientServerASGTest {
 					return null;
 				}
 			};
-			m_nap.setDispatcher(new Dispatcher<RequestEnum>("foo") {
+			m_ep.setDispatcher(new Dispatcher<RequestEnum>("foo") {
 				@Override
-				public FlowProcessContext getContext(Message message,
-						KonnectorDataobject dataobject, RequestEnum request) {
+				public FlowProcessContext getContext(Message message, KonnectorDataobject dataobject,
+						RequestEnum request) {
 					return null;
 				}
 			});
-			m_serverKonnector.setEndpoint(m_nap);
+			m_serverKonnector.setEndpointRouter(new EndpointRouter() {
+				@Override
+				public Endpoint resolveKonnector(Message message, KonnectorDataobject dataobject) {
+					return m_ep;
+				}
+			});
 		} catch (ExceptionDuplicate e) {
 			e.printStackTrace();
 			fail(e.getMessage());
@@ -134,19 +135,16 @@ public class ClientServerASGTest {
 		m_clientKonnector.destroy();
 		m_serverKonnector.destroy();
 
-		EndpointController.INSTANCE
-				.removeEndpoint(m_nap);
+		EndpointController.INSTANCE.removeEndpoint(m_ep);
 	}
 
 	@Test
 	public void test() {
 
 		try {
-			m_serverKonnector.configure(new WSServerConfig()
-					.url("http://localhost:" + serverKonnectorPort + "/hello")
+			m_serverKonnector.configure(new WSServerConfig().url("http://localhost:" + serverKonnectorPort + "/hello")
 					.maxProcessingTimeSeconds(15)
-					.wsServerImplementorClassName(
-							"org.akigrafsoft.wsconnector.HelloPortTypeServer"));
+					.wsServerImplementorClassName("org.akigrafsoft.wsconnector.HelloPortTypeServer"));
 		} catch (ExceptionAuditFailed e) {
 			e.printStackTrace();
 			fail(e.getMessage());
@@ -155,21 +153,20 @@ public class ClientServerASGTest {
 
 		try {
 			m_clientKonnector
-					.configure(new WSClientConfig()
-							// .url("http://localhost:" + asgPort + "/hello")
-							.localWSDL("file:ws/HelloService_client.wsdl")
-							.wsServiceClassName(
-									"org.akigrafsoft.wsdl.helloservice.HelloService")
-							.wsPortClassName(
-									"org.akigrafsoft.wsdl.helloservice.HelloPortType")
-							.wsClientImplementorClassName(
-									"org.akigrafsoft.wsconnector.HelloWSClientImplementor")
-							// .namespaceURI("http://wsconnector.akigrafsoft.org/")
-							.namespaceURI(
-									"http://www.examples.com/wsdl/HelloService.wsdl")
-							.localServicePart("HelloPortTypeServerService")
-							// .localServicePart("Hello_Service")
-							.localPortPart("HelloWebServicePort"));
+					.configure(
+							new WSClientConfig()
+									// .url("http://localhost:" + asgPort +
+									// "/hello")
+									.localWSDL("file:ws/HelloService_client.wsdl")
+									.wsServiceClassName("org.akigrafsoft.wsdl.helloservice.HelloService")
+									.wsPortClassName("org.akigrafsoft.wsdl.helloservice.HelloPortType")
+									.wsClientImplementorClassName(
+											"org.akigrafsoft.wsconnector.HelloWSClientImplementor")
+					// .namespaceURI("http://wsconnector.akigrafsoft.org/")
+					.namespaceURI("http://www.examples.com/wsdl/HelloService.wsdl")
+					.localServicePart("HelloPortTypeServerService")
+					// .localServicePart("Hello_Service")
+					.localPortPart("HelloWebServicePort"));
 			// .localPortPart("Hello_Port"));
 		} catch (ExceptionAuditFailed e) {
 			e.printStackTrace();
@@ -203,8 +200,7 @@ public class ClientServerASGTest {
 			System.out.println(new Date() + "|WAIT...");
 			Utils.sleep(2);
 
-			assertEquals("Thanks " + "Kevin" + ", Hello!",
-					dataobject.inboundBuffer);
+			assertEquals("Thanks " + "Kevin" + ", Hello!", dataobject.inboundBuffer);
 		}
 
 		Utils.sleep(2);
